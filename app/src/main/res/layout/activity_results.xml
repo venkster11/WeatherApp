@@ -10,6 +10,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -21,17 +23,17 @@
             android:id="@+id/tv_location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Location"
+            android:text="location"
             android:layout_gravity="center_vertical"
-            android:textSize="21sp" />
+            android:textSize="36sp" />
 
         <TextView
             android:id="@+id/tv_temp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0 C"
+            android:text="0"
            android:layout_marginStart="10dp"
-            android:textSize="64sp" />
+            android:textSize="36sp" />
 
         </LinearLayout>
 
@@ -39,6 +41,7 @@
             android:id="@+id/minTemp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="0"
             android:textSize="21sp" />
 
@@ -46,6 +49,7 @@
             android:id="@+id/maxTemp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="0"
             android:textSize="21sp" />
 
@@ -53,6 +57,7 @@
             android:id="@+id/weather_state"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="0"
             android:textSize="21sp" />
 
@@ -60,6 +65,7 @@
             android:id="@+id/wind_speed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="0"
             android:textSize="21sp" />
 
@@ -67,6 +73,7 @@
             android:id="@+id/air_pressure"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="0"
             android:textSize="21sp" />
 
@@ -74,6 +81,7 @@
             android:id="@+id/humidity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="0"
             android:textSize="21sp" />
 
@@ -81,6 +89,7 @@
             android:id="@+id/visibility"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="0"
             android:textSize="21sp" />
 
@@ -88,6 +97,7 @@
             android:id="@+id/predictability"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="0"
             android:textSize="21sp" />
 

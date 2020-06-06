@@ -39,15 +39,15 @@ class ResultsActivity : AppCompatActivity() {
 
         viewModel.response.observe(this, Observer {
             if (it != null) {
-                tv_temp.text = it.consolidated_weather[0].the_temp.toString()
-                minTemp.text = it.consolidated_weather[0].min_temp.toString()
-                maxTemp.text = it.consolidated_weather[0].max_temp.toString()
+                tv_temp.text = it.consolidated_weather[0].the_temp.toString() + " C"
+                minTemp.text = "Min " + it.consolidated_weather[0].min_temp.toString() + "C"
+                maxTemp.text = "Max " + it.consolidated_weather[0].max_temp.toString() + "C"
                 weather_state.text = it.consolidated_weather[0].weather_state_name
-                wind_speed.text = it.consolidated_weather[0].wind_speed.toString()
-                air_pressure.text = it.consolidated_weather[0].air_pressure.toString()
-                humidity.text = it.consolidated_weather[0].humidity.toString()
-                visibility.text = it.consolidated_weather[0].visibility.toString()
-                predictability.text = it.consolidated_weather[0].predictability.toString()
+                wind_speed.text = "Wind Speed "+it.consolidated_weather[0].wind_speed.toString()+" mph"
+                air_pressure.text = "Pressure "+it.consolidated_weather[0].air_pressure.toString()+" mb"
+                humidity.text = "Humidity "+it.consolidated_weather[0].humidity.toString()+"%"
+                visibility.text = "Visibility "+it.consolidated_weather[0].visibility.toString()+" miles"
+                predictability.text = "Confidence "+it.consolidated_weather[0].predictability.toString()+"%"
 
             }
         })
